@@ -8,7 +8,6 @@ class Application
 
     if req.path.match(/items/)
       @@item.find { |i| i.name == req.path.split("/items/").last }
-      end
       if item
         resp.body = item.price
       else
