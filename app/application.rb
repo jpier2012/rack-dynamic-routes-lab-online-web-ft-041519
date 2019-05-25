@@ -6,9 +6,11 @@ class Application
 
     if req.path.match(/items/)
       item_name = req.path.split("/items/").last
-
-      binding.pry
+    else
+      resp.status
     end
+
+    binding.pry
     resp.finish
   end
 
