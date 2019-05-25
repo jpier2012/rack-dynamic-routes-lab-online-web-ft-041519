@@ -8,7 +8,7 @@ class Application
       req.path.split("/items/").last
 
     else
-      resp.write(resp.body)
+      resp.write(resp)
     end
 
     resp.finish
