@@ -13,7 +13,7 @@ class Application
       end
       if item
         resp.body = item.price
-        resp.status = 200
+        resp.write(resp.body)
       else
         resp.status = 400
         resp.write("Item not found")
