@@ -6,6 +6,7 @@ class Application
 
     if req.path.match(/items/)
       req.path.split("/items/").last
+      
     else
       resp.write(resp.body)
     end
