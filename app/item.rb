@@ -6,7 +6,4 @@ class Item
     @price = price
   end
 
-  def self.item
-    @@item
-  end
 end
