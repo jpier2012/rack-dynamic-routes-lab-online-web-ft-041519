@@ -7,4 +7,8 @@ class Item
     @name = name
     @price = price
   end
+
+  def self.item
+    @@item
+  end
 end
