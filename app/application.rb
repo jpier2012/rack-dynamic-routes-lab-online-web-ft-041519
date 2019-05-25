@@ -8,7 +8,7 @@ class Application
       item = Item.item.find { |i| i.name == req.path.split("/items/").last }
       item ? item : resp.write(resp)
     else
-      resp.write(resp)
+      resp.write(resp.body)
     end
 
     resp.finish
