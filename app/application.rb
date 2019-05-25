@@ -6,6 +6,7 @@ class Application
 
     item_name = req.path.match(/items/).split("/items/").last
 
+    resp.write.status
     resp.finish
   end
 
