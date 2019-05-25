@@ -5,8 +5,7 @@ class Application
     req = Rack::Request.new(env)
 
     item_name = req.path.match(/items/).split("/items/").last
-
-    resp.write.status
+    binding.pry
     resp.finish
   end
 
